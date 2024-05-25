@@ -74,16 +74,17 @@
         } else if (input == "") {
           alert("Please enter a number.");
           return;
-        } else if (operationType == "hours-min") {
-          result = `${(input / 60).toFixed(3)} Minutes`;
+        } 
+        else if (operationType == "hours-min") {
+          result = `${input * 60} Minutes`;
         } else if (operationType == "hours-sec") {
-          result = `${(input / 60).toFixed(3)} Seconds`;
+          result = `${input * 3600} Seconds`;
         } else if (operationType == "min-hours") {
           result = `${(input / 60).toFixed(3)} Hours`;
         } else if (operationType == "min-sec") {
-          result = `${(input / 60).toFixed(3)} Seconds`;
+          result = `${input * 60} Seconds`;
         } else if (operationType == "sec-hours") {
-          result = `${(input / 60).toFixed(3)} Hours`;
+          result = `${(input / 3600).toFixed(3)} Hours`;
         } else if (operationType == "sec-min") {
           result = `${(input / 60).toFixed(3)} Minutes`;
         }
