@@ -3,52 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Utility Tools</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <main>
       <header>
-        <h1 >Calculator</h1>
+        <h1>Welcome to my page</h1>
       </header>
-      <div id="main_box">
-        <input type="text" id="display" readonly />
-        <div class="but_conainer">
-          <button class="but" onclick="number(1)">1</button>
-          <button class="but" onclick="number(2)">2</button>
-          <button class="but" onclick="number(3)">3</button>
-          <button class="but" onclick="number(4)">4</button>
-          <button class="but" onclick="number(5)">5</button>
-          <button class="but" onclick="number(6)">6</button>
-          <button class="but" onclick="number(7)">7</button>
-          <button class="but" onclick="number(8)">8</button>
-          <button class="but" onclick="number('9')">9</button>
-          <button class="but" onclick="number('0')">0</button>
-          <button class="but" onclick="number('.')">.</button>
-          <button class="but" onclick="number('+')">+</button>
-          <button class="but" onclick="number('*')">*</button>
-          <button class="but" onclick="number('-')">-</button>
-          <button class="but" onclick="number('/')">/</button>
-          <button class="but" onclick="displayvalue='';document.querySelector('#display').value = displayvalue;">C</button>
-          <button class="but" onclick="final()">=</button>
+      <section class="cards">
+        <div class="card">
+          <h2>Normal Calculator</h2>
+          <p>
+            Perform basic arithmetic operations with this easy-to-use
+            calculator.
+          </p>
+          <a href="./caluclator.html" class="button">Go to Calculator</a>
         </div>
-      </div>
+        <div class="card">
+          <h2>Time Calculator</h2>
+          <p>
+            Calculate time differences and perform other time-related
+            calculations.
+          </p>
+          <a href="./time.html" class="button">Go to Time Calculator</a>
+        </div>
+      </section>
+      <footer>
+      <p>&copy; 2024 Utility Tools. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p>
+        Follow us on: <a href="#">Facebook</a>, <a href="#">Twitter</a>,
+        <a href="#">Instagram</a>
+      </p>
+    </footer>
     </main>
-    <script>
-        let= displayvalue='';
-        document.querySelector('#display').value = displayvalue;
-        function number(x){
-            displayvalue+=x;
-            document.querySelector('#display').value = displayvalue;
-        }
-        function final(){
-            let results = eval(displayvalue);
-            displayvalue=results;
-            document.querySelector('#display').value = displayvalue;
-        }
-        
-
-        
-    </script>
+    
   </body>
 </html>

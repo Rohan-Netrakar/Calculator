@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: rgba(0, 0, 0, 0.749);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header h1 {
+    margin-top: 5px;
+    font-size: 4em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.instruction, .form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.instruction h2 {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.instruction p {
+    font-size: 1em;
+    
+    margin-bottom: 15px;
+}
+
+.form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form select, .form input[type="number"], .form input[type="text"], .form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form select:focus, .form input[type="number"]:focus, .form input[type="text"]:focus, .form button:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+}
+
+.form button {
+    background-color: #2575fc;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #6a11cb;
+}
+
+input[readonly] {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p, footer nav, footer a {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
